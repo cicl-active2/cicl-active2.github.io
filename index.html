@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CICL-Active</title>
+
+    <meta name="theme-color" content="#3273B7" />
+    <meta name="msapplication-TileColor" content="#3273B7" />
+
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="static/images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://ajax.googleapis.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script defer src="static/js/bulma-carousel.min.js"></script>
+    <script defer src="static/js/bulma-slider.min.js"></script>
+    <script defer src="static/js/index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6JRHGEYCV"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6JRHGEYCV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X6JRHGEYCV');
+    </script>
+  </head>
+
+  <body>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <main id="main-content">
+      <nav class="page-nav">
+        <div class="page-nav-inner">
+          <a href="#overview" class="page-nav-link">Overview</a>
+          <a href="#method" class="page-nav-link">Method</a>
+          <a href="#experiments" class="page-nav-link">Experiments</a>
+          <a href="#poster" class="page-nav-link">Poster</a>
+          <a href="#bibtex" class="page-nav-link">BibTeX</a>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <section class="hero publication-header">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+              <!-- Title -->
+                <div class="title-wide">
+                  <h1 class="title is-1 publication-title">
+                    Contrastive In-Context Learning with Active Memory<br>for Task Planning
+                  </h1>
+                </div>
+              <!-- Venue -->
+                <p class="publication-venue">CoRL 2025</p>
+                <p class="publication-workshop">
+                  Workshop on Making Sense of Data in Robotics: Composition, Curation, and Interpretability at Scale
+                </p>
+              <!-- Author -->
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><a href="https://jiho-lee-page.github.io/" target="_blank">Jiho Lee</a><sup>1</sup>,</span>
+                  <span class="author-block"><a href="https://sites.google.com/view/kyungjaelee" target="_blank">Kyungjae Lee</a><sup>2</sup>,</span>
+                  <span class="author-block"><a href="https://airlab.cau.ac.kr/members/professor/" target="_blank">Eunwoo Kim</a><sup>1</sup></span>
+                </div>
+              <!-- Affiliataion -->
+                <div class="is-size-5 publication-affiliations">
+                  <span class="author-block"><span class="affiliation-marker cau">▶</span><sup>1</sup> Chung-Ang University</span>
+                  <span class="author-block"><span class="affiliation-marker ku">▶</span><sup>2</sup> Korea University</span>
+                </div>
+              <!-- Paper link -->
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://openreview.net/forum?id=NaayWmHgL1" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-alt"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+              <!-- Code link -->
+                  <span class="link-block">
+                    <a href="https://cicl-active.github.io" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fab fa-github"></i></span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
+              <!-- Keywords -->
+                <div class="publication-keywords">
+                  <span class="keyword-label">Keywords:</span>
+                  <span class="keyword-tag">Task Planning</span>
+                  <span class="keyword-tag">Contrastive Learning</span>
+                  <span class="keyword-tag">Active Learning</span>
+                  <span class="keyword-tag">Large Language Models</span>
+                </div>
+              <!-- Summary -->
+                <div class="summary-box">
+                  <span class="summary-label">In brief</span>
+                  <p>
+                    <b>Contrastive In-Context Learning with Active Memory</b> leverages both successful and failed experiences through dual prompting
+                      within a compact and diversity-aware active memory.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teaser -->
+      <section class="hero is-small is-light" id="overview">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <div class="publication-video">
+                  <video controls muted loop playsinline preload="metadata">
+                    <source src="./assets/cicl-active_video.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified readable-content">
+              <p>
+                Large language models (LLMs) have shown great promise in robotic task planning through in-context learning with a few successful demonstrations, guiding the model to generate feasible task plans.
+                However, existing approaches typically overlook the learning signals from failures, often relying solely on manually curated positive examples. 
+                Recent methods attempt to utilize failures by transforming them into feedback or improved plans through LLMs, which involves additional steps to generate knowledge that can serve as positive examples for learning.
+                Moreover, these methods often store examples indiscriminately in an external memory, leading to unbounded memory expansion and inefficiencies in both retrieval and resource usage.
+
+              <p>
+                In this work, we propose a <b>contrastive in-context learning</b> framework for task planning that utilizes both successful and failed demonstrations through a dual prompting strategy. 
+                It enables the model to learn by contrasting positive prompts from successful ones, which guide correct behaviors, and negative prompts from failed ones, which prevent recurring mistakes. 
+                To implement this strategy efficiently, we introduce an <b>active memory</b> with a limited budget that selectively incorporates useful demonstrations generated by an LLM during task planning.
+              </p>
+
+              <p>
+                Experiments on diverse multi-object, long-horizon, and spatially constrained manipulation tasks show that our method improves the average task success rate by 10.7%, while reducing memory size by up to 75.0% compared to existing LLM-based task planning approaches.              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Method -->
+      <section class="section" id="method">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3">Method</h2>
+
+          <figure class="figure-container">
+            <img src="./assets/cicl-active_overview.png" loading="lazy" class="center-img overview-img" />
+          </figure>
+          <div class="content has-text-justified readable-content">
+            <p>
+              Our method aims to turn the experiences generated during deployment into useful learning signals.
+              The framework consists of two key components:
+            </p>
+          
+            <ul class="method-steps">
+              <li>
+                <b>Dual prompting.</b>
+                Since the generated experiences include both successes and failures, successful cases guide the planner on what to imitate, while failed cases help it recognize what should be avoided and prevent repeated mistakes through contrastive in-context learning.
+              </li>
+          <li>
+            <b>Active memory.</b>
+            To avoid storing redundant or less informative experiences, we maintain a compact memory with a limited budget and update it through diversity-aware selection.
+          </li>
+            </ul>
+          </div>
+      </section>
+          
+
+      
+
+      <!-- Experiments -->
+      <section class="section section-light" id="experiments">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3">Experiment video</h2>
+          <div class="experiment-video">
+            <video controls muted loop playsinline preload="metadata">
+              <source src="./assets/cicl-active_video2.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Poster -->
+      <section class="section" id="poster">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <h2 class="title is-3">Poster</h2>
+            <iframe src="./assets/cicl-active_poster.pdf" title="InversePrompt poster" class="poster-frame"> </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- BibTeX -->
+      <section class="section" id="bibtex">
+        <div class="container is-max-desktop content">
+          <div class="bibtex-header">
+            <h2 class="title is-3">BibTeX</h2>
+            <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard" type="button">
+              <i class="fas fa-copy"></i>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+
+          <pre id="bibtex-code"><code>@inproceedings{
+            lee2025contrastive,
+            title={Contrastive In-Context Learning with Active Memory for Task Planning},
+            author={Jiho Lee and Kyungjae Lee and Eunwoo Kim},
+            booktitle={Workshop on Making Sense of Data in Robotics: Composition, Curation, and Interpretability at Scale at CoRL 2025},
+            year={2025},
+            url={https://openreview.net/forum?id=NaayWmHgL1}
+            }
+        </code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container is-max-desktop">
+        <div class="content">
+          <p>
+            This page was built using the
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a>, adapted from the
+            <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a>
+            project page. This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function copyBibTeX() {
+        const bibtex = document.getElementById("bibtex-code").innerText;
+        navigator.clipboard.writeText(bibtex).then(() => {
+          const button = document.querySelector(".copy-bibtex-btn");
+          const label = button.querySelector(".copy-text");
+          const originalText = label.innerText;
+    
+          label.innerText = "Copied";
+          button.classList.add("copied");
+    
+          setTimeout(() => {
+            label.innerText = originalText;
+            button.classList.remove("copied");
+          }, 1600);
+        });
+      }
+    
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    
+      const scrollButton = document.querySelector(".scroll-to-top");
+      const navLinks = document.querySelectorAll(".page-nav-link");
+      const sections = Array.from(navLinks)
+        .map(link => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+    
+      function updateActiveNav() {
+        const scrollPosition = window.scrollY + 120;
+    
+        let currentSection = sections[0];
+    
+        sections.forEach(section => {
+          if (section.offsetTop <= scrollPosition) {
+            currentSection = section;
+          }
+        });
+    
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+    
+          if (link.getAttribute("href") === `#${currentSection.id}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    
+      window.addEventListener("scroll", function () {
+        if (scrollButton) {
+          if (window.scrollY > 300) {
+            scrollButton.classList.add("visible");
+          } else {
+            scrollButton.classList.remove("visible");
+          }
+        }
+    
+        updateActiveNav();
+      });
+    
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          setTimeout(updateActiveNav, 300);
+        });
+      });
+    
+      updateActiveNav();
+    </script>
+  </body>
+</html>
